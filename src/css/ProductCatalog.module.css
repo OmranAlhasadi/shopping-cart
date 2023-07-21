@@ -1,0 +1,9 @@
+.catalogContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    margin-bottom: 200px;
+    margin-left: 600px;
+
+}

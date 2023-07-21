@@ -1,0 +1,51 @@
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+    height: 100px;
+
+}
+
+.logo{
+
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+
+}
+
+.navButtonsContainer{
+
+    
+
+}
+
+.navBarButtons{
+    list-style: none; 
+    display: flex;
+    gap: 50px;
+}
+
+.searchButton{
+
+}
+
+.cart{
+
+}
+
+.navButton{
+    border: none;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navButton:hover {
+    background-color: #c0c0c0;
+    cursor: pointer;
+}

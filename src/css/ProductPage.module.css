@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.pageBody{
+    display: flex;
+    gap: 100px;
+    
+}

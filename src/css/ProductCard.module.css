@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border: 0.1px solid black;
+    gap: 20px;
+    
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.pImage{
+    
+    height: 400px;
+    width: 400px;
+
+    background-color: #f2eeeb;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pName{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.pPrice{
+    
+}
