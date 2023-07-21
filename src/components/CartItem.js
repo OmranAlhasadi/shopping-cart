@@ -4,7 +4,7 @@ import styles from '../css/CartItem.module.css'
 const CartItem = ({item, increment, decrement}) => {
 
 
-    const id = item.id
+    
 
     return(
         

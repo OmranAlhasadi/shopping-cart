@@ -93,7 +93,7 @@ const ProductPage = () => {
         <ProductCatalog list={productList} onProductClick={handleProductClick}/>
       </div>
       {isAddProductOpen && currentProduct && <AddProduct product={currentProduct} cartItems={cartItems} increment={increment} decrement={decrement} onClose={closeAddProduct} />}
-      {isCartOpen && <CartSlider cartItems={cartItems} onClose={handleCartClick} increment={increment} decrement={decrement} />}
+      <CartSlider isCartOpen={isCartOpen} cartItems={cartItems} onClose={handleCartClick} increment={increment} decrement={decrement} />
     </div>
   );
 };

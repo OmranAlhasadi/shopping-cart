@@ -1,4 +1,3 @@
-
 import styles from '../css/ProductCatalog.module.css'
 import ProductCard from './ProductCard'
 
@@ -9,14 +8,13 @@ const ProductCatalog = ({list, onProductClick}) => {
                 <ProductCard 
                     key={product.id}
                     image={product.image}
+                    previewImage={product.previewImage}
                     name={product.name}
                     price={product.price}
                     onClick={() => onProductClick(product)}
                 />
             ))}
         </div>
-
-
     )
 }
 

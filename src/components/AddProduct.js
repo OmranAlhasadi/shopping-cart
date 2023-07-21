@@ -1,6 +1,6 @@
-
 import styles from '../css/AddProduct.module.css'
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const AddProduct = ({ product, cartItems, increment, decrement, onClose }) => {
     const [quantity, setQuantity] = useState(0);
@@ -12,14 +12,25 @@ const AddProduct = ({ product, cartItems, increment, decrement, onClose }) => {
     }
 
     useEffect(() => {
-        
         const cartItem = cartItems.find(item => item.id === product.id);
         setQuantity(cartItem ? cartItem.quantity : 0);
     }, [product, cartItems]);
 
+    const variants = {
+        open: { scale: 1 },
+        closed: { scale: 0 }
+    }
+
     return (
         <div className={styles.backdrop} onClick={handleOutsideClick}>
-            <div className={styles.modal}>
+            <motion.div
+              className={styles.modal}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={variants}
+              transition={{duration: 0.15}}
+            >
                 <div className={styles.productInfo}>
                     <img src={product.image} alt={product.name} className={styles.productImage} />
                     <div className={styles.productDetails}>
@@ -33,7 +44,7 @@ const AddProduct = ({ product, cartItems, increment, decrement, onClose }) => {
                     <button className={styles.qbutton} onClick={() => increment(product.id)}>+</button>
                 </div>
                 <button className={styles.confirm}>Confirm</button>
-            </div>
+            </motion.div>
         </div>
     )
 }
