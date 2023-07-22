@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.5e847098.css",
-    "main.js": "/shopping-cart/static/js/main.babd098f.js",
+    "main.js": "/shopping-cart/static/js/main.2b3f1c21.js",
     "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
     "static/media/rtx-3080-gallery-1.png": "/shopping-cart/static/media/rtx-3080-gallery-1.3a807259b7c567ff42f7.png",
     "static/media/rtx-3070-gallery-1.png": "/shopping-cart/static/media/rtx-3070-gallery-1.ab42866c3e8df9236bdf.png",
@@ -106,11 +106,11 @@
     "static/media/kingston-fury-ddr3-gallery-3.png": "/shopping-cart/static/media/kingston-fury-ddr3-gallery-3.06900d167648df1126a4.png",
     "index.html": "/shopping-cart/index.html",
     "main.5e847098.css.map": "/shopping-cart/static/css/main.5e847098.css.map",
-    "main.babd098f.js.map": "/shopping-cart/static/js/main.babd098f.js.map",
+    "main.2b3f1c21.js.map": "/shopping-cart/static/js/main.2b3f1c21.js.map",
     "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e847098.css",
-    "static/js/main.babd098f.js"
+    "static/js/main.2b3f1c21.js"
   ]
 }
