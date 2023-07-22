@@ -2,8 +2,10 @@ import { useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../css/CartSlider.module.css';
 import CartItem from './CartItem';
+import { useNavigate } from 'react-router-dom';
 
 const CartSlider = ({ cartItems, onClose, increment, decrement, isCartOpen }) => {
+  const navigate = useNavigate();
   const sliderRef = useRef();
 
   const handleClickOutside = useCallback((event) => {
@@ -55,7 +57,7 @@ const CartSlider = ({ cartItems, onClose, increment, decrement, isCartOpen }) =>
         ))}
       </div>
       <div className={styles.subtotal}>Subtotal: ${subtotal.toFixed(2)}</div>
-      <button className={styles.checkoutButton}>Checkout</button>
+      <button className={styles.checkoutButton} onClick={() => navigate('/')}>Checkout</button>
     </motion.div>
   );
 };

@@ -43,7 +43,7 @@ const AddProduct = ({ product, cartItems, increment, decrement, onClose }) => {
                     <div>{quantity}</div>
                     <button className={styles.qbutton} onClick={() => increment(product.id)}>+</button>
                 </div>
-                <button className={styles.confirm}>Confirm</button>
+                <button className={styles.confirm} onClick={() => onClose()}>Confirm</button>
             </motion.div>
         </div>
     )

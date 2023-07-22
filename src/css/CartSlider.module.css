@@ -33,12 +33,19 @@
 .checkoutButton {
   display: block;
   margin-top: 20px;
-  width: 100%;
+  width: 90%;
+  align-self: center;
   padding: 10px;
   background-color: rebeccapurple;
   color: white;
   border: none;
   cursor: pointer;
+  
+}
+
+.checkoutButton:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .subtotal{
