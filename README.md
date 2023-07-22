@@ -1,4 +1,4 @@
-# [Live View](https://omranalhasadi.github.io/shopping-cart/)
+# [Click Me for Live View](https://omranalhasadi.github.io/shopping-cart/)
 
 
 # Description
